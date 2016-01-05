@@ -12,8 +12,8 @@ module.exports = {
                     path.resolve(__dirname, 'src'),
                 ],
                 loader: 'babel',
-            }
-        ]
+            },
+        ],
     },
 
     resolve: {
@@ -22,7 +22,7 @@ module.exports = {
             'zap-base-js-number': 'src/index.js',
         },
         modulesDirectories: [
-            'src/js',
+            'src',
             'node_modules',
         ],
     },
@@ -30,7 +30,7 @@ module.exports = {
     resolveLoader: {
         root: __dirname,
         modulesDirectories: [
-            'src/js',
+            'src',
             'node_modules',
         ],
     },
