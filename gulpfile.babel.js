@@ -60,7 +60,7 @@ gulp.task('specs', gulpCallback => {
     const karmaServer = require('karma').Server;
 
     karmaServer.start({
-        configFile: __dirname + '/karma.config.js',
+        configFile: __dirname + '/karma.conf.js',
         singleRun: true,
     }, karmaExitCode => {
         if (karmaExitCode !== 0) {
