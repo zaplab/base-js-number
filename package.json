@@ -45,7 +45,6 @@
   },
   "main": "dist/index.js",
   "scripts": {
-    "postinstall": "./node_modules/.bin/gulp setup",
     "test": "karma start"
   }
 }
