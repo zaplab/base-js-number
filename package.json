@@ -41,7 +41,7 @@
     "phantomjs": "^1.9.19",
     "run-sequence": "^1.1.5",
     "webpack": "^1.12.9",
-    "zap-base-js-object": "0.0.1"
+    "zap-base-js-object": "^1.1.0"
   },
   "main": "dist/index.js",
   "scripts": {
