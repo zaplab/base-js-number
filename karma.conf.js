@@ -1,4 +1,6 @@
 
+require('babel-register');
+
 module.exports = function (config) {
     config.set({
         autoWatch: true,
@@ -41,7 +43,7 @@ module.exports = function (config) {
             'spec',
         ],
 
-        webpack: require('./webpack-karma.config.js'),
+        webpack: require('./webpack.config.js'),
 
         webpackMiddleware: {
             stats: {

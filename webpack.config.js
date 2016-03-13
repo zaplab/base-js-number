@@ -1,8 +1,8 @@
 
-var path = require('path');
-var webpack = require('webpack');
+import path from 'path';
+import webpack from 'webpack';
 
-module.exports = {
+export default {
     module: {
         loaders: [
             {
@@ -12,6 +12,16 @@ module.exports = {
                     path.resolve(__dirname, 'src'),
                 ],
                 loader: 'babel',
+                query: {
+                    presets: [
+                        'es2015',
+                    ],
+                    plugins: [
+                        'babel-plugin-add-module-exports',
+                        'transform-es2015-modules-commonjs',
+                        'transform-object-assign'
+                    ],
+                },
             },
         ],
     },

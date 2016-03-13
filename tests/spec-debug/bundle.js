@@ -109,7 +109,7 @@
 	        it('random(1, 5) should return a number between 1 and 5', function () {
 	            var numbers = {};
 	            var i = 0;
-	            var numberCache = undefined;
+	            var numberCache = void 0;
 
 	            for (; i < 1000; ++i) {
 	                numberCache = (0, _zapBaseJsNumber.random)(1, 5);
@@ -129,11 +129,12 @@
 
 	"use strict";
 
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
 	});
+
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 	exports.assign = assign;
 	exports.clone = clone;
 	exports.each = each;
